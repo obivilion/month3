@@ -1,0 +1,31 @@
+sudo atp update
+sudo atp upgrade
+
+python3 --version
+python3.11 --version
+
+sudo atp install python3
+
+sudo atp install python3-venv
+
+python3 -m venv .venv
+
+source venv/bin/activate
+deactivate
+
+venv\Scripts\activate
+
+pip install flet[all]
+
+sudo apt install libepv1
+
+
+pwd 
+cd
+cd ../..
+ls
+cd -a
+mkdir name
+nano name
+via name
+cat name
