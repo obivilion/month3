@@ -38,12 +38,16 @@ def main(page: ft.Page):
         if name:
             if 6 <= time < 12:
                 greeting_text.value = f"Доброе утро, {name}"
+                greeting_text.color = "yellow"
             elif 12 <= time < 18:
                 greeting_text.value = f"Доброе день, {name}"
+                greeting_text.color = "orenge"
             elif 18 <= time < 24:
                 greeting_text.value = f"Доброе вечер, {name}"
+                greeting_text.color = "red"
             else:
                 greeting_text.value = f"Доброе ночи, {name}"
+                greeting_text.color = "blue"
             greet_button.text = "Поздороваться снова"
             name_input.value = ""
             greeting_history.append(f"{datetime.now().replace(microsecond=0) }: {name}")
